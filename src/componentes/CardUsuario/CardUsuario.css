@@ -1,0 +1,50 @@
+.card{
+    width: 30%;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-radius: 6px;
+
+}
+
+.imagemCard{
+    width: 20%;
+    margin-right: 16px;
+}
+
+.infosCard{
+    width: 50%;
+}
+
+.descricaoCard{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    color:  #B0B1B2;
+}
+
+.nomeCard{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.aptoCard{
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    color: #B0B1B2;
+}
+
+.entregueCard{
+    width: 20%;
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FF6C00;
+}

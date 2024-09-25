@@ -1,0 +1,25 @@
+.campo{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.campo label{
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+    color: #131921;
+}
+
+.campo input{
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px #00000013;
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+    padding: 16px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+
+}

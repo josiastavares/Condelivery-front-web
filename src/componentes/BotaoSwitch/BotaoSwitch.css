@@ -1,0 +1,47 @@
+
+  html {
+    font-size: 5px}
+  
+
+  /* Esconde o checkbox */
+  .switch > .hidden-toggle {
+    display: none;
+  }
+  
+  /* Caixinha onde o botão desliza */
+  .switch > .slider {
+    background: #DFE0F3;
+    cursor: pointer;
+    border-radius: 24px;
+    transition: all 300ms ease-in-out;
+    width: 50px;
+    height: 24px;
+    position: relative;
+  }
+  
+  /* O botão redondinho */
+  .switch > .slider > .button {
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: #ffffff;
+    top: 0.3rem;
+    left: 0.3rem;
+    transition: all 300ms ease-in-out;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  /* Slider ON */
+  .switch > .hidden-toggle:checked ~ .slider {
+    background: #FF6C00;
+  }
+  
+  /* Botão ON */
+  .switch > .hidden-toggle:checked ~ .slider > .button {
+    left: 5.3rem;
+    background: #ffffff;
+  }
+  
+  
