@@ -2,7 +2,7 @@ import './Cabecalho.css'
 
 function Cabecalho() {
     return (
-        <header>
+        <header className='cabecalho-dashboard'>
             <img src="/imagens/Condelivery.png" alt="Logo Condelivery"/>
             <a href="">
                 <button  className="botao-sair">

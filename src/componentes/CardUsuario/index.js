@@ -7,7 +7,7 @@ function CardUsuario({nome, imagem, descricao, apto}) {
     const location = useLocation(); 
 
     return (
-        <div className="card">
+        <div className="card-usuario">
             <img className="imagemCard" src={`${imagem}`} />
             <div className="infosCard">
                 <p className="descricaoCard">{descricao}</p>
