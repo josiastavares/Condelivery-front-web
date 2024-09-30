@@ -13,7 +13,7 @@ function CardUsuario({nome, imagem, descricao, apto}) {
                 <p className="descricaoCard">{descricao}</p>
                 <p className="nomeCard">{nome}</p>
             </div>
-            {location.pathname === '/' ? (
+            {location.pathname === '/usuarios' ? (
                 <BotaoSwitch />
             ) : (
                 <p className="entregueCard">Entregue</p>
