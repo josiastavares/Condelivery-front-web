@@ -25,7 +25,7 @@ const Cadastro = () => {
                                 <input className="input-form" type="checkbox" name="manter-conectado" id="manter-conectado" value="manter-conectado" />
                                 <label for="manter-conectado" className="manter-conectado-txt">Lembrar-me</label>
                             </div>
-                            <button className="botao-cadastro" type="submit">Acessar</button>
+                            <Link to='/usuarios'><button className="botao-cadastro" type="submit">Acessar</button></Link>
                         </form>
                         <p className="cadastre-se">Já tem uma conta? <Link to='/login'>Acesse</Link></p>
                     </div>

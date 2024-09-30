@@ -22,7 +22,7 @@ const Login = () => {
                                 <label for="manter-conectado" className="manter-conectado-txt">Manter Conectado</label>
                             </div>
                         </div>
-                        <button className='botao-login' type="submit">Acessar</button>
+                        <Link to='/usuarios'><button className='botao-login' type="submit">Acessar</button></Link>
                     </form>
                     <p className="cadastre-se">Ainda não tem uma conta? <Link to='/cadastro'>Cadastre-se</Link></p>
                 </div>
