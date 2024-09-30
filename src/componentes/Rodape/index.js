@@ -2,7 +2,7 @@ import './Rodape.css'
 
 function Rodape() {
     return(
-        <footer>
+        <footer className='rodape-dashboard'>
             <i className="fa-regular fa-copyright copy"></i>
             <p>
             2024 Condelivery | Todos os direitos reservados
