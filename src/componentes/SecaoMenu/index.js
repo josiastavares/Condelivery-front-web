@@ -12,8 +12,8 @@ const SecaoMenu = () => {
       <BotaoMenu 
         texto="Usuários" 
         imagem="usuario" 
-        linkMenu='/'
-        classeAtiva={location.pathname === '/' ? 'botao-menu-ativo' : ''} 
+        linkMenu='/usuarios'
+        classeAtiva={location.pathname === '/usuarios' ? 'botao-menu-ativo' : ''} 
       />
       <BotaoMenu 
         texto="Entregas" 
