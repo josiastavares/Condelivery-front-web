@@ -140,7 +140,7 @@ const Inicial = () => {
                     <div className="colaboradores">
 
                         <div className="item-colaboradores">
-                            <img className="imagem-inicio img-colaboradores" src="./imagens/perfil/foto-beatriz.png" alt="Foto Beatriz" />
+                            <img className="imagem-inicio img-colaboradores" src="./imagens/Perfil/foto-beatriz.png" alt="Foto Beatriz" />
                             <p className="nome-colaboradores">Beatriz Perez</p>
                             <div className="social-icons">
                                 <a href="https://www.linkedin.com/in/perezbeatriz/" target="_blank"><i className="icone fa-brands fa-linkedin"></i></a>
@@ -148,7 +148,7 @@ const Inicial = () => {
                             </div>
                         </div>
                         <div className="item-colaboradores">
-                            <img className="imagem-inicio img-colaboradores" src="./imagens/perfil/foto-cibele.png" alt="Foto Cibele" />
+                            <img className="imagem-inicio img-colaboradores" src="./imagens/Perfil/foto-cibele.png" alt="Foto Cibele" />
                             <p className="nome-colaboradores">Cibele Rodrigues</p>
                             <div className="social-icons">
                                 <a href="https://www.linkedin.com/in/cibelerodriguesl/" target="_blank"><i className="icone fa-brands fa-linkedin"></i></a>
@@ -156,7 +156,7 @@ const Inicial = () => {
                             </div>
                         </div>
                         <div className="item-colaboradores">
-                            <img className="imagem-inicio img-colaboradores" src="./imagens/perfil/foto-eduardo-tavares.png" alt="Foto Eduardo Tavares" />
+                            <img className="imagem-inicio img-colaboradores" src="./imagens/Perfil/foto-eduardo-tavares.png" alt="Foto Eduardo Tavares" />
                             <p className="nome-colaboradores">Eduardo Tavares</p>
                             <div className="social-icons">
                                 <a href="https://www.linkedin.com/in/eduardodossantostavares/" target="_blank"><i className="icone fa-brands fa-linkedin"></i></a>
@@ -164,7 +164,7 @@ const Inicial = () => {
                             </div>
                         </div>
                         <div className="item-colaboradores">
-                            <img className="imagem-inicio img-colaboradores" src="./imagens/perfil/foto-eduardo-meireles.png" alt="Foto Paulo Eduardo" />
+                            <img className="imagem-inicio img-colaboradores" src="./imagens/Perfil/foto-eduardo-meireles.png" alt="Foto Paulo Eduardo" />
                             <p className="nome-colaboradores">Paulo Eduardo</p>
                             <div className="social-icons">
                                 <a href="https://www.linkedin.com/in/eduardo-meireles-lima/" target="_blank"><i className="icone fa-brands fa-linkedin"></i></a>
@@ -172,7 +172,7 @@ const Inicial = () => {
                             </div>
                         </div>
                         <div className="item-colaboradores">
-                            <img className="imagem-inicio img-colaboradores" src="./imagens/perfil/foto-tiago.png" alt="Foto Tiago Andrade" />
+                            <img className="imagem-inicio img-colaboradores" src="./imagens/Perfil/foto-tiago.png" alt="Foto Tiago Andrade" />
                             <p className="nome-colaboradores">Tiago Andrade</p>
                             <div className="social-icons">
                                 <a href="https://www.linkedin.com/in/andrade-tiago/" target="_blank"><i className="icone fa-brands fa-linkedin"></i></a>
