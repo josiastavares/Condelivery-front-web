@@ -21,8 +21,8 @@ const Cadastro = () => {
                         <form id="cadastro-form">
                             <input className="input-form" type="text" name="Celular" id="Celular" placeholder="Celular" required autocomplete="tel" />
                             <input className="input-form" type="password" name="senha" id="senha" placeholder="Senha" required autocomplete="new-password" />
-                            <div className="manter-conectado-caixa">
-                                <input className="input-form" type="checkbox" name="manter-conectado" id="manter-conectado" value="manter-conectado" />
+                            <div className="manter-conectado-cadastro-caixa">
+                                <input type="checkbox" name="manter-conectado" id="manter-conectado" value="manter-conectado" />
                                 <label for="manter-conectado" className="manter-conectado-txt">Lembrar-me</label>
                             </div>
                             <Link to='/usuarios'><button className="botao-cadastro" type="submit">Acessar</button></Link>

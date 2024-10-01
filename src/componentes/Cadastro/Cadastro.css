@@ -78,12 +78,6 @@
     font-weight: 400;
 }
 
-#cadastro-form > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 14px 0;
-}
 
 #cadastro-form > div > a {
     font-family: "Montserrat", sans-serif;
@@ -93,11 +87,11 @@
     text-align: left;
 }
 
-#cadastro-form > div > div {
+.manter-conectado-cadastro-caixa {
     display: flex;
+    justify-content: left;
     gap: 10px;
-    justify-content: center;
-    align-items: center;
+    margin: 10px 0;
 }
 
 .manter-conectado-txt {

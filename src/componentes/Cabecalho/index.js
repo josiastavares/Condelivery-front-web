@@ -1,14 +1,15 @@
+import { Link } from 'react-router-dom'
 import './Cabecalho.css'
 
 function Cabecalho() {
     return (
         <header className='cabecalho-dashboard'>
-            <img src="/imagens/Condelivery.png" alt="Logo Condelivery"/>
+            <Link to="/usuarios"><img src="/imagens/Condelivery.png" alt="Logo Condelivery"/></Link>
             <a href="">
-                <button  className="botao-sair">
+                <Link to="/"><button  className="botao-sair">
                     <img src='/imagens/sair.svg'/>
                     Sair
-                </button>
+                </button></Link>
             </a>
         </header>
         

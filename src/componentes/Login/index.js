@@ -18,7 +18,7 @@ const Login = () => {
                         <div>
                             <a href="">Esqueci minha senha</a>
                             <div>
-                                <input type="checkbox" name="manter-conectado" className="manter-conectado input-form" id="manter-conectado" value="manter-conectado" />
+                                <input type="checkbox" name="manter-conectado" className="manter-conectado" id="manter-conectado" value="manter-conectado" />
                                 <label for="manter-conectado" className="manter-conectado-txt">Manter Conectado</label>
                             </div>
                         </div>
