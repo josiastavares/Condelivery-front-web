@@ -38,7 +38,7 @@ const Inicial = () => {
             <header className='cabecalho-inicial'>
                 <div className="menu-home">
                     <div className="logo">
-                        <img src="./imagens/logo.png" alt="logo" />
+                        <img src="./imagens/condelivery.png" alt="logo" />
                     </div>
                     <div className="menu-toggle" id="mobile-menu">
                         <i className="icone fas fa-bars"></i>
@@ -90,7 +90,7 @@ const Inicial = () => {
                         </div>
                         <div className="sobre-nos-texto">
                             <h4>SOBRE NÓS</h4>
-                            <h3>A Essência do Condelivery</h3>
+                            <h3 className='sub-titulo-sobre-nos'>A Essência do Condelivery</h3>
                             <p>Condelivery é um sistema revolucionário de entregas, especialmente projetado para
                                 atender as necessidades exclusivas dos condomínios.</p>
                             <div className="cards">

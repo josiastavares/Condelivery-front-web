@@ -4,7 +4,7 @@ import './Cabecalho.css'
 function Cabecalho() {
     return (
         <header className='cabecalho-dashboard'>
-            <Link to="/usuarios"><img src="/imagens/Condelivery.png" alt="Logo Condelivery"/></Link>
+            <Link to="/usuarios"><img className="logo-cabecalho" src="/imagens/Condelivery.png" alt="Logo Condelivery"/></Link>
             <a href="">
                 <Link to="/"><button  className="botao-sair">
                     <img src='/imagens/sair.svg'/>

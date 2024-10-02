@@ -7,7 +7,7 @@ const Cadastro = () => {
         <div className="corpo-cadastro">
             <header className="cabecalho-cadastro">
                 <div className="logo-wrapper">
-                    <img src="./imagens/logo.png" alt="Logo" className="logo" />
+                    <img src="./imagens/logo.png" alt="Logo" className="logo-login" />
                 </div>
             </header>
             <main className="principal-cadastro">

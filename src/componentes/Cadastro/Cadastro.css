@@ -33,11 +33,6 @@
     padding: 0 10%;
 }
 
-.logo {
-    width: auto;
-    height: 42px;
-}
-
 .principal-cadastro {
     height: 80vh;
     display: flex;

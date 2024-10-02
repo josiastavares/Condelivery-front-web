@@ -7,6 +7,10 @@
     padding: 0 10%;
 }
 
+.logo-cabecalho{
+    width: 200px;
+}
+
 .botao-sair{
     border: none;
     background-color: transparent;

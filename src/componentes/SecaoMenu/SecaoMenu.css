@@ -1,3 +1,12 @@
 .secaoMenu{
     width: 20%;
   }
+
+  @media (max-width: 1200px) {
+    .secaoMenu{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  }

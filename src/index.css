@@ -10,9 +10,21 @@
   text-decoration: none;
 }
 
+body{
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-dashboard{
+  display: flex;
+  padding: 32px 10%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+}
+
 .secaoCards{
   width: 80%;
-  height: 450px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -31,4 +43,33 @@
 .imagemPerfil{
   width: 100px;
   margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .main-dashboard{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .secaoCards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 3%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .divformulario{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imagemPerfil{
+    width: 100px;
+    margin-bottom: 30px;
+  }
 }

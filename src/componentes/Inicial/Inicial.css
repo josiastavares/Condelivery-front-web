@@ -2,11 +2,11 @@
 
 :root {
     --my-gradient: linear-gradient(90deg, #FF6C00 0%, #FFC200 100%);
-  }
-  
-  .element {
+}
+
+.element {
     background: var(--my-gradient);
-  }
+}
 
 * {
     margin: 0;
@@ -22,13 +22,14 @@
 }
 
 /* Estilos globais */
-.corpo, html {
+.corpo,
+html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-.cabecalho-inicial  {
+.cabecalho-inicial {
     background-color: white;
     padding: 10px 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
@@ -41,7 +42,8 @@
 }
 
 .logo img {
-    height: 40px; /* Ajustar a altura da logo */
+    width: 150px;
+    /* Ajustar a altura da logo */
 }
 
 .cabecalho-menu {
@@ -68,7 +70,7 @@
     gap: 10px;
 }
 
-.botao-container{
+.botao-container {
     display: flex;
     gap: 20px;
 }
@@ -108,19 +110,14 @@
 }
 
 .menu-list li {
-    display: inline; /* Exibir os itens em linha por padrão */
+    display: inline;
+    /* Exibir os itens em linha por padrão */
 }
 
 .menu-toggle {
-    display: none; /* Oculta o botão do menu por padrão */
+    display: none;
+    /* Oculta o botão do menu por padrão */
     cursor: pointer;
-}
-
-
-
-
-.logo img {
-    width: 150px;
 }
 
 
@@ -142,12 +139,14 @@
     background-color: #fff;
     margin-top: 20px;
     margin-left: 2%;
-    flex-wrap: wrap; /* Permite que o conteúdo se ajuste em telas menores */
+    flex-wrap: wrap;
+    /* Permite que o conteúdo se ajuste em telas menores */
 }
 
 .capa_texto {
     flex: 1;
-    margin-right: 20px; /* Adiciona espaçamento entre texto e imagem */
+    margin-right: 20px;
+    /* Adiciona espaçamento entre texto e imagem */
 }
 
 .capa_texto h2 {
@@ -220,13 +219,15 @@ span {
     flex: 2;
 }
 
-.sobre-nos-texto h4, .membros h4 {
+.sobre-nos-texto h4,
+.membros h4 {
     font-size: 24px;
     color: #FF6C00;
     margin-bottom: 10px;
 }
 
-.sobre-nos-texto h3, .membros h3 {
+.sub-titulo-sobre-nos,
+.membros h3 {
     font-size: 30px;
     margin-bottom: 20px;
 }
@@ -240,22 +241,27 @@ span {
 .cards {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* Permite que os cards se ajustem em telas menores */
+    flex-wrap: wrap;
+    /* Permite que os cards se ajustem em telas menores */
 }
 
 .card {
     background: #a3a3a358;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
-    flex: 1;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    /* Sombra mais sutil */
+    width: 45%;
     margin-bottom: 20px;
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    /* Transição suave */
 }
 
 .card:hover {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais pronunciada no hover */
-    transform: scale(1.05); /* Leve aumento no tamanho */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    /* Sombra mais pronunciada no hover */
+    transform: scale(1.05);
+    /* Leve aumento no tamanho */
 }
 
 
@@ -348,6 +354,7 @@ span {
     row-gap: 50px;
     margin-left: 20px;
     margin-right: 20px;
+    justify-content: space-between;
 
 }
 
@@ -399,38 +406,41 @@ span {
     transition: color 0.3s ease;
 }
 
-.social-icons a:hover, h4 {
+.social-icons a:hover,
+h4 {
     color: #FF6C00;
 }
 
 .membros {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-wrap: wrap;
-    text-align: center; 
+    text-align: center;
 }
 
 .imagem_baixeoapp {
-    max-width: 95%;
+    width: 100%;
     height: auto;
     align-items: center;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 20px 0 0;
 }
 
+
 /* Footer Styles */
-.rodape-inicial > p {
+.rodape-inicial>p {
     color: #000000;
     font-size: 14px !important;
     font-family: 'Montserrat', sans-serif;
 }
 
-.rodape-inicial{
+.rodape-inicial {
     padding: 40px 20px;
 }
 
@@ -438,11 +448,12 @@ span {
 @media (max-width: 1200px) {
     .menu-home {
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo img {
-        width: 120px;
+        width: 160px;
     }
 
     .capa {
@@ -475,17 +486,41 @@ span {
     .card {
         width: 100%;
         display: flex;
-        
-    }
-
-    .colaboradores {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
     }
 
-    .item-colaboradores {
-        width: 80%;
+    .card h3 {
+        margin-bottom: 0;
     }
+
+    .card>p {
+        width: 100%;
+    }
+
+    .card>svg {
+        width: 30px;
+        margin-right: 10px;
+    }
+
+    .colaboradores {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .item-colaboradores {
+        width: 30%;
+    }
+
+
+    .img-colaboradores {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -524,38 +559,35 @@ span {
         display: flex;
     }
 
-    .colaboradores {
-        flex-direction: column;
-        align-items: center;
+    .item-colaboradores {
+        width: 45%;
     }
 
-    .item-colaboradores {
-        width: 90%;
-    }
     .menu-list {
-        display: none; 
-        flex-direction: column; 
+        display: none;
+        flex-direction: column;
         position: absolute;
-        top: 60px; 
+        top: 60px;
         right: 0;
-        background-color: white; 
+        background-color: white;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         z-index: 1;
-        width: 100%; 
+        width: 100%;
     }
 
     .menu-toggle {
-        display: block; 
-        padding: 10px 8px;        
-         margin-bottom: 20px;
+        display: block;
+        padding: 10px 8px;
+        margin-bottom: 20px;
 
     }
 
     .menu-list.show {
-        display: flex; 
+        display: flex;
         margin-left: 100px;
         padding-left: 20px;
     }
+
     #close-menu {
         background-color: #FF6C00;
         color: white;
@@ -572,14 +604,20 @@ span {
         z-index: 500;
         transition: background-color 0.3s ease;
     }
-    
+
     #close-menu:hover {
         background-color: #FFC200;
     }
-    
+
 }
 
-    .botao-container {
-        padding: 20px 2px; 
-        font-size: 12px; 
+.botao-container {
+    padding: 20px 2px;
+    font-size: 12px;
+}
+
+@media (max-width: 530px) {
+    .item-colaboradores{
+        width: 80%;
     }
+}

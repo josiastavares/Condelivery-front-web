@@ -6,7 +6,7 @@ const Login = () => {
     return (
         <div className="corpo-login">
             <header className="cabecalho-login">
-                <img src="./imagens/logo.png" alt="Logo" className="logo" />
+                <img src="./imagens/logo.png" alt="Logo" className="logo-login" />
             </header>
             <main className="principal-login">
                 <div className="conteudo-login">
