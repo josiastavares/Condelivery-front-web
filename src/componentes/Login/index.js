@@ -6,7 +6,7 @@ const Login = () => {
     return (
         <div className="corpo-login">
             <header className="cabecalho-login">
-                <img src="./imagens/logo.png" alt="Logo" className="logo-login" />
+                <Link to='/'><img src="./imagens/logo.png" alt="Logo" className="logo-login" /></Link>
             </header>
             <main className="principal-login">
                 <div className="conteudo-login">
@@ -24,7 +24,7 @@ const Login = () => {
                         </div>
                         <Link to='/usuarios'><button className='botao-login' type="submit">Acessar</button></Link>
                     </form>
-                    <p className="cadastre-se">Ainda não tem uma conta? <Link to='/cadastro'>Cadastre-se</Link></p>
+                    <p className="cadastre-se">Ainda não tem uma conta? <Link to='/cadastro' className='link-cadastre-se'>Cadastre-se</Link></p>
                 </div>
                 <div className="personagem">
                     <img className="perso imagem-login" src="./imagens/sacola-personagem.png" alt="Personagem" />

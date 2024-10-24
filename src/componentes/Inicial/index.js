@@ -3,35 +3,44 @@ import './Inicial.css'
 
 const Inicial = () => {
 
-    document.addEventListener('DOMContentLoaded', () => {
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuList = document.getElementById('menu-list');
-        const closeMenuButton = document.getElementById('close-menu');
-    
-        // Abrir/fechar menu ao clicar no ícone do menu móvel
-        mobileMenu.addEventListener('click', () => {
-            const isExpanded = mobileMenu.getAttribute('aria-expanded') === 'true';
-            mobileMenu.setAttribute('aria-expanded', !isExpanded);
-            menuList.classList.toggle('show');
-            menuList.setAttribute('aria-hidden', isExpanded);
-        });
-    
-        // Fechar menu ao clicar no botão de fechar
-        closeMenuButton.addEventListener('click', () => {
-            menuList.classList.remove('show');
-            mobileMenu.setAttribute('aria-expanded', 'false');
-            menuList.setAttribute('aria-hidden', 'true');
-        });
-    
-        // Fechar o menu ao clicar fora dele
-        document.addEventListener('click', (event) => {
-            if (!mobileMenu.contains(event.target) && !menuList.contains(event.target)) {
-                menuList.classList.remove('show');
-                mobileMenu.setAttribute('aria-expanded', 'false');
-                menuList.setAttribute('aria-hidden', 'true');
+    const controls = document.querySelectorAll(".control");
+    let currentItem = 0;
+    const items = document.querySelectorAll(".item");
+    const maxItems = items.length;
+
+    controls.forEach((control) => {
+        control.addEventListener("click", (e) => {
+            var isLeft = e.target.classList.contains("arrow-left");
+
+            if (isLeft) {
+                currentItem -= 1;
+            } else {
+                currentItem += 1;
             }
+
+            if (currentItem >= maxItems) {
+                currentItem = 0;
+            }
+
+            if (currentItem < 0) {
+                currentItem = maxItems - 1;
+            }
+
+            items.forEach((item) => item.classList.remove("current-item"));
+
+            items[currentItem].scrollIntoView({
+                behavior: "smooth",
+                inline: "center"
+            });
+
+            items[currentItem].classList.add("current-item");
         });
     });
+
+
+
+
+
 
     return (
         <div>
@@ -40,17 +49,13 @@ const Inicial = () => {
                     <div className="logo">
                         <img src="./imagens/condelivery.png" alt="logo" />
                     </div>
-                    <div className="menu-toggle" id="mobile-menu">
-                        <i className="icone fas fa-bars"></i>
-                    </div>
+
                     <nav className="cabecalho-menu">
                         <ul className="menu-list" id="menu-list">
                             <li><a href="#sobre-nos">Sobre Nós</a></li>
                             <li><a href="#servicos">Serviços</a></li>
                             <li><a href="#equipe">Equipe</a></li>
                             <li><a href="#app">App</a></li>
-                            <button id="close-menu">X</button>
-
                         </ul>
 
                     </nav>
@@ -79,7 +84,21 @@ const Inicial = () => {
                 <section className="parceiros">
                     <div>
                         <h4>Fique de olho em todos os parceiros disponíveis</h4>
-                        <img src="./imagens/parceiros.png" alt="parceiros logo" />
+                        <div class="container">
+                            <button class="arrow-left control" aria-label="Previous image">◀</button>
+                            <button class="arrow-right control" aria-label="Next Image">▶</button>
+                            <div class="gallery-wrapper">
+                                <div class="gallery">
+
+                                    <img src="./imagens/zedelivery.png" alt="Beach Image" class="item current-item" />
+                                    <img src="./imagens/rappi.png" alt="Animal Image" class="item" />
+                                    <img src="./imagens/daki.png" alt="Street Image" class="item" />
+                                    <img src="./imagens/ifood.png" alt="Zoo Image" class="item" />
+                                    <img src="./imagens/shopper.png" alt="Model Image" class="item" />
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </section>
 

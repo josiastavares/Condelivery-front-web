@@ -84,7 +84,7 @@
 
 .manter-conectado-cadastro-caixa {
     display: flex;
-    justify-content: left;
+    justify-content: right;
     gap: 10px;
     margin: 10px 0;
 }
@@ -122,10 +122,10 @@
     text-align: center;
 }
 
-.cadastre-se > a {
+.link-cadastre-se {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    color: var(--my-gradient);
+    color: #FF6C00 !important;
 }
 
 .img {

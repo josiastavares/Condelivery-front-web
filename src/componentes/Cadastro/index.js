@@ -7,7 +7,7 @@ const Cadastro = () => {
         <div className="corpo-cadastro">
             <header className="cabecalho-cadastro">
                 <div className="logo-wrapper">
-                    <img src="./imagens/logo.png" alt="Logo" className="logo-login" />
+                <Link to='/'><img src="./imagens/logo.png" alt="Logo" className="logo-login" /></Link>
                 </div>
             </header>
             <main className="principal-cadastro">
@@ -27,7 +27,7 @@ const Cadastro = () => {
                             </div>
                             <Link to='/usuarios'><button className="botao-cadastro" type="submit">Acessar</button></Link>
                         </form>
-                        <p className="cadastre-se">Já tem uma conta? <Link to='/login'>Acesse</Link></p>
+                        <p className="cadastre-se">Já tem uma conta? <Link to='/login' className='link-cadastre-se'>Acesse</Link></p>
                     </div>
                 </div>
             </main>
