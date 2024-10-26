@@ -1,46 +1,33 @@
 import { Link } from 'react-router-dom';
 import './Inicial.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { useKeenSlider } from "keen-slider/react"
+import "keen-slider/keen-slider.min.css"
+
+const animation = { duration: 9000, easing: (t) => t }
+
 
 const Inicial = () => {
 
-    const controls = document.querySelectorAll(".control");
-    let currentItem = 0;
-    const items = document.querySelectorAll(".item");
-    const maxItems = items.length;
-
-    controls.forEach((control) => {
-        control.addEventListener("click", (e) => {
-            var isLeft = e.target.classList.contains("arrow-left");
-
-            if (isLeft) {
-                currentItem -= 1;
-            } else {
-                currentItem += 1;
-            }
-
-            if (currentItem >= maxItems) {
-                currentItem = 0;
-            }
-
-            if (currentItem < 0) {
-                currentItem = maxItems - 1;
-            }
-
-            items.forEach((item) => item.classList.remove("current-item"));
-
-            items[currentItem].scrollIntoView({
-                behavior: "smooth",
-                inline: "center"
-            });
-
-            items[currentItem].classList.add("current-item");
-        });
-    });
-
-
-
-
-
+    const [sliderRef] = useKeenSlider({
+        loop: true,
+        rtl: true,
+        slides: {
+            perView: 6,
+            spacing: 5,
+        },
+        renderMode: "performance",
+        drag: false,
+        created(s) {
+            s.moveToIdx(5, true, animation)
+        },
+        updated(s) {
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
+        },
+        animationEnded(s) {
+            s.moveToIdx(s.track.details.abs + 5, true, animation)
+        }
+    })
 
     return (
         <div>
@@ -84,21 +71,38 @@ const Inicial = () => {
                 <section className="parceiros">
                     <div>
                         <h4>Fique de olho em todos os parceiros disponíveis</h4>
-                        <div class="container">
-                            <button class="arrow-left control" aria-label="Previous image">◀</button>
-                            <button class="arrow-right control" aria-label="Next Image">▶</button>
-                            <div class="gallery-wrapper">
-                                <div class="gallery">
-
-                                    <img src="./imagens/zedelivery.png" alt="Beach Image" class="item current-item" />
-                                    <img src="./imagens/rappi.png" alt="Animal Image" class="item" />
-                                    <img src="./imagens/daki.png" alt="Street Image" class="item" />
-                                    <img src="./imagens/ifood.png" alt="Zoo Image" class="item" />
-                                    <img src="./imagens/shopper.png" alt="Model Image" class="item" />
-                                </div>
+                        <div ref={sliderRef} className="keen-slider">
+                            <div className="keen-slider__slide number-slide1">
+                                <img src='./imagens/zedelivery.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide2">
+                                <img src='./imagens/rappi.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide3">
+                                <img src='./imagens/daki.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide4">
+                                <img src='./imagens/ifood.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide5">
+                                <img src='./imagens/shopper.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide1">
+                                <img src='./imagens/zedelivery.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide2">
+                                <img src='./imagens/rappi.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide3">
+                                <img src='./imagens/daki.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide4">
+                                <img src='./imagens/ifood.png' />
+                            </div>
+                            <div className="keen-slider__slide number-slide5">
+                                <img src='./imagens/shopper.png' />
                             </div>
                         </div>
-
                     </div>
                 </section>
 
